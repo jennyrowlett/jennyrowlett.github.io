@@ -1,0 +1,100 @@
+.bio {
+  display: flex;
+}
+
+.mug {
+  flex: 30%;
+  padding: 5px 0px;
+}
+
+.bioright {
+  flex: 70%;
+  padding: 10px 5px;
+}
+
+.mug img {
+  height: auto;
+  max-width: 185px;
+  border: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .mug img {
+  }
+}
+
+.jenny {
+  border-radius: 50%;
+}
+
+.highlight {
+  background-color: rgb(255, 236, 153);
+}
+
+.intro {
+  background: -webkit-linear-gradient(left, #2763fc, #00ff00);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.column {
+  float: left;
+  width: 47%;
+  padding: 0 10px;
+  display: flex; /*Make sure to call this on your container*/
+  align-items: stretch; /*stretches all cards same height*/
+  justify-content: space-around; /*some space between cards*/
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  display: flex; /*Make sure to call this on your container*/
+  align-items: stretch; /*stretches all cards same height*/
+  justify-content: space-around; /*some space between cards*/
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  border-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.tag-cloud {
+  display: inline-block;
+  color: white;
+  padding: 8px 10px;
+  font-family: Arial;
+  border-radius: 25px;
+  background-color: #2196f3;
+  margin-top: 8px;
+  position: relative;
+}
+
+.tag-cloud a {
+  color: white;
+}
