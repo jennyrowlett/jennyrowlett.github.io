@@ -9,7 +9,7 @@ name: Jenny Rowlett
 author: Jenny Rowlett
 
 # Short bio or description (displayed in the header)
-description: Researcher, data analyst
+description: Researcher
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/reverie.png
@@ -24,9 +24,9 @@ footer-links:
   email: jennyrowlett8@gmail.com
   facebook:
   flickr:
-  github: https://github.com/jennyrowlett
+  github: jennyrowlett
   instagram:
-  linkedin: https://www.linkedin.com/in/jrowlett/
+  linkedin: jrowlett
   pinterest:
   rss:
   twitter:
