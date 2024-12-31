@@ -1,0 +1,213 @@
+/* ------------------------------------ Global Styles ------------------------------------ */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+:root {
+  --oxford-blue: #0a122aff;
+  --lighter-blue: rgb(46, 73, 156);
+  --light-blue: rgb(68, 106, 221);
+  --asparagus: #698f3fff;
+  --seasalt: #fbfaf8ff;
+  --bone: #e7decdff;
+  --bole: #804e49ff;
+}
+
+/* Reset margin and padding globally */
+html,
+body {
+  height: 100%; /* Ensure html and body take full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Set background color for the entire page */
+body {
+  background-color: var(--seasalt);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center content horizontally */
+  margin: 0;
+  padding: 0 5%;
+  flex: 1; /* Allow content to grow and push footer down */
+}
+
+/* ------------------------------------ Typography Styles ------------------------------------ */
+h1,
+h2,
+h3,
+p {
+  color: var(--oxford-blue);
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 60px;
+  margin-top: 5px;
+}
+
+p {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+.subheading {
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.color-light-blue {
+  color: var(--light-blue);
+}
+
+.color-lighter-blue {
+  color: var(--lighter-blue);
+}
+
+ul {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li::before {
+  content: "→";
+  margin-right: 8px; /* Optional: space between dash and text */
+}
+
+a {
+  color: var(--asparagus);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------ Layout and Structure ------------------------------------ */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start; /* Left-align content inside the container */
+  max-width: 90%; /* Limit container width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px 10%; /* Horizontal padding */
+  flex: 1; /* Allow container to grow and center content */
+  height: 100%; /* Full height for vertical centering */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: flex-start; /* Left-align content inside .content */
+  width: 100%; /* Ensure content takes full width */
+  padding-right: 5%;
+  margin-top: 5%; /* Push content slightly higher */
+}
+
+.border-div {
+  background-color: var(--seasalt);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  max-width: 80%;
+  text-align: left;
+}
+
+/* ------------------------------------ Footer Styles ------------------------------------ */
+footer {
+  color: var(--oxford-blue);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 10%; /* Push the footer to the bottom */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Align list items to the left */
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+footer ul li::before {
+  content: "";
+  margin-right: 8px; /* Optional: space between dash and text */
+}
+
+footer a {
+  color: var(--oxford-blue);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------ Responsive Design ------------------------------------ */
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: left;
+    margin-top: 8%; /* Adjust for smaller screen sizes */
+  }
+
+  footer {
+    max-width: 100%; /* Ensure footer doesn't exceed the width of the content */
+    padding: 20px 5%; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
